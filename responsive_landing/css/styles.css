@@ -1,4 +1,3 @@
-mainContainer
 .container{
     display: flex;
     flex-direction: column;
@@ -7,20 +6,40 @@ mainContainer
     text-align: center;
     justify-content: center;
 }
-/*main title */
-.title {
-    width: 400px;
-    margin: 0 auto;
-}
-/* sub-description */
+
 p.subtitle{
-    max-width: 400px;
+    width: 100%;
+    padding: 0 10px; 
+}
+
+.mid-container-items{
     padding: 0 10px;
 }
 
+img.image-container{
+        width: 180px;
+        height: 240px;
+        object-fit: cover;  
+        float: left;
+        margin:0 10px;
+}
+img.image-container-two {
+    float: right;
+    margin: 0 10px;
 
 
-@media screen and (min-width: 765px){
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+}
+.mid-container-items p {
+    text-align: end;
+}
+
+
+@media only screen and (min-width: 900px){
     .container{
         display: flex;
         flex-direction: column;
@@ -29,12 +48,12 @@ p.subtitle{
         text-align: center;
         justify-content: center;
     }
-    /*main title */
+
     .title {
         width: 400px;
         margin: 0 auto;
     }
-    /* sub-description */
+
     p.subtitle{
         max-width: 400px;
         padding: 0 10px;
@@ -48,10 +67,9 @@ p.subtitle{
         float: left;
     }
 
-    /*Start Mid Container */
-
     .mid-container-center {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         padding: 0 20px;
     }
@@ -64,13 +82,10 @@ p.subtitle{
         margin: 0;
         padding: 0;
     }
-    /* End Mid Container */
 
-    /* Start Middle Container */
     .middle-container {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         align-self: flex-end;
     }
     .middle-container-content-wrapper{
@@ -86,16 +101,8 @@ p.subtitle{
         text-align: start;
         float: left;
     }
-    .middle-container-items{
-        padding: 0 20px;
-        /* max-width: 400px; */
-    }
-    .image-container-two {
-        float: right;
-    }
-
-    .about-us{
-        max-width: 500px;
-    }
+    .middle-container-items{padding: 0 20px;}
+    .image-container-two {float: right;}
+    .about-us{max-width: 500px;}
     
 }
