@@ -11,3 +11,22 @@ function bookingCost(booking) {
     return bookingCost * discountFactor
 
 }
+
+const days = [
+    {
+        check_in_day: 'Monday',
+        duration: 3,
+        cat_name: 'Snowy'
+    },
+    {
+        check_in_day: 'Wednesday',
+        duration: 3,
+        cat_name: 'Snowy'
+    },
+    {
+        check_in_day: 'Friday',
+        duration: 3,
+        cat_name: 'Snowy'
+    }
+
+]
